@@ -9,23 +9,40 @@
 /* Begin PBXBuildFile section */
 		270162C0280164840069E0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270162BF280164840069E0BE /* AppDelegate.swift */; };
 		270162C2280164840069E0BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270162C1280164840069E0BE /* SceneDelegate.swift */; };
-		270162C4280164850069E0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270162C3280164850069E0BE /* ViewController.swift */; };
+		270162C4280164850069E0BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270162C3280164850069E0BE /* HomeViewController.swift */; };
 		270162C7280164850069E0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270162C5280164850069E0BE /* Main.storyboard */; };
 		270162CA280164850069E0BE /* Weather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 270162C8280164850069E0BE /* Weather.xcdatamodeld */; };
 		270162CC2801648B0069E0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270162CB2801648B0069E0BE /* Assets.xcassets */; };
 		270162CF2801648B0069E0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270162CD2801648B0069E0BE /* LaunchScreen.storyboard */; };
+		270162DE280194010069E0BE /* static in Resources */ = {isa = PBXBuildFile; fileRef = 270162D9280194010069E0BE /* static */; };
+		270162DF280194010069E0BE /* Overpass-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 270162DA280194010069E0BE /* Overpass-VariableFont_wght.ttf */; };
+		270162E0280194010069E0BE /* Overpass-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 270162DB280194010069E0BE /* Overpass-Italic-VariableFont_wght.ttf */; };
+		270162E1280194010069E0BE /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 270162DC280194010069E0BE /* OFL.txt */; };
+		270162E2280194010069E0BE /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 270162DD280194010069E0BE /* README.txt */; };
+		270162EA2801AD530069E0BE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270162E92801AD530069E0BE /* APIService.swift */; };
+		272CED232802BD7800D2CD08 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CED222802BD7800D2CD08 /* Current.swift */; };
+		2774624928029A65000D8C75 /* OneCallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774624828029A65000D8C75 /* OneCallModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		270162BC280164840069E0BE /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270162BF280164840069E0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		270162C1280164840069E0BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		270162C3280164850069E0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		270162C3280164850069E0BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		270162C6280164850069E0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		270162C9280164850069E0BE /* Weather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weather.xcdatamodel; sourceTree = "<group>"; };
 		270162CB2801648B0069E0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270162CE2801648B0069E0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		270162D02801648B0069E0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270162D02801648B0069E0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Weather/Info.plist; sourceTree = SOURCE_ROOT; };
+		270162D9280194010069E0BE /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
+		270162DA280194010069E0BE /* Overpass-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		270162DB280194010069E0BE /* Overpass-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		270162DC280194010069E0BE /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		270162DD280194010069E0BE /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		270162E92801AD530069E0BE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		272CED222802BD7800D2CD08 /* Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
+		272CED242802E1DC00D2CD08 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		2774624828029A65000D8C75 /* OneCallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCallModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +75,81 @@
 		270162BE280164840069E0BE /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				270162BF280164840069E0BE /* AppDelegate.swift */,
-				270162C1280164840069E0BE /* SceneDelegate.swift */,
-				270162C3280164850069E0BE /* ViewController.swift */,
-				270162C5280164850069E0BE /* Main.storyboard */,
-				270162CB2801648B0069E0BE /* Assets.xcassets */,
-				270162CD2801648B0069E0BE /* LaunchScreen.storyboard */,
+				270162E82801AD060069E0BE /* API Service */,
+				270162E5280196830069E0BE /* ViewModels */,
+				270162E6280196AC0069E0BE /* Models */,
+				270162E72801A8D40069E0BE /* Controllers */,
+				270162D8280167720069E0BE /* Supporting files */,
+				270162E4280196640069E0BE /* View */,
+				270162D62801675A0069E0BE /* Font */,
 				270162D02801648B0069E0BE /* Info.plist */,
+				270162CB2801648B0069E0BE /* Assets.xcassets */,
 				270162C8280164850069E0BE /* Weather.xcdatamodeld */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		270162D62801675A0069E0BE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				270162DC280194010069E0BE /* OFL.txt */,
+				270162DB280194010069E0BE /* Overpass-Italic-VariableFont_wght.ttf */,
+				270162DA280194010069E0BE /* Overpass-VariableFont_wght.ttf */,
+				270162DD280194010069E0BE /* README.txt */,
+				270162D9280194010069E0BE /* static */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		270162D8280167720069E0BE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				270162BF280164840069E0BE /* AppDelegate.swift */,
+				270162C1280164840069E0BE /* SceneDelegate.swift */,
+				272CED242802E1DC00D2CD08 /* Config.xcconfig */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		270162E4280196640069E0BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				270162C5280164850069E0BE /* Main.storyboard */,
+				270162CD2801648B0069E0BE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		270162E5280196830069E0BE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		270162E6280196AC0069E0BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2774624828029A65000D8C75 /* OneCallModel.swift */,
+				272CED222802BD7800D2CD08 /* Current.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		270162E72801A8D40069E0BE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				270162C3280164850069E0BE /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		270162E82801AD060069E0BE /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				270162E92801AD530069E0BE /* APIService.swift */,
+			);
+			path = "API Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +210,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270162E1280194010069E0BE /* OFL.txt in Resources */,
+				270162DF280194010069E0BE /* Overpass-VariableFont_wght.ttf in Resources */,
 				270162CF2801648B0069E0BE /* LaunchScreen.storyboard in Resources */,
+				270162E0280194010069E0BE /* Overpass-Italic-VariableFont_wght.ttf in Resources */,
 				270162CC2801648B0069E0BE /* Assets.xcassets in Resources */,
+				270162DE280194010069E0BE /* static in Resources */,
+				270162E2280194010069E0BE /* README.txt in Resources */,
 				270162C7280164850069E0BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,10 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2774624928029A65000D8C75 /* OneCallModel.swift in Sources */,
 				270162CA280164850069E0BE /* Weather.xcdatamodeld in Sources */,
-				270162C4280164850069E0BE /* ViewController.swift in Sources */,
+				270162EA2801AD530069E0BE /* APIService.swift in Sources */,
+				270162C4280164850069E0BE /* HomeViewController.swift in Sources */,
 				270162C0280164840069E0BE /* AppDelegate.swift in Sources */,
 				270162C2280164840069E0BE /* SceneDelegate.swift in Sources */,
+				272CED232802BD7800D2CD08 /* Current.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +262,7 @@
 /* Begin XCBuildConfiguration section */
 		270162D12801648B0069E0BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272CED242802E1DC00D2CD08 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -233,6 +324,7 @@
 		};
 		270162D22801648B0069E0BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272CED242802E1DC00D2CD08 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -299,8 +391,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,8 +421,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,7 +434,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

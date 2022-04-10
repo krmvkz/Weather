@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Overpass-Bold.ttf">
+            <string>Overpass-Bold</string>
+        </array>
+        <array key="Overpass-Light.ttf">
+            <string>Overpass-Light</string>
+        </array>
+        <array key="Overpass-Regular.ttf">
+            <string>Overpass-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-image" translatesAutoresizingMaskIntoConstraints="NO" id="Moz-dB-AvF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kgj-SL-kgE">
+                                <rect key="frame" x="74" y="43" width="194" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeK-6r-7Qb">
+                                        <rect key="frame" x="0.0" y="12.5" width="150" height="33.5"/>
+                                        <fontDescription key="fontDescription" name="Overpass-Bold" family="Overpass" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-2" height="3"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="rCW-RY-d8g">
+                                        <rect key="frame" x="170" y="17" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="9mq-ZE-aZS"/>
+                                            <constraint firstAttribute="height" constant="24" id="ZbJ-PN-UWD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partly-cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-vN-Olc">
+                                <rect key="frame" x="137" y="161" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="5YZ-Dk-Mqu"/>
+                                    <constraint firstAttribute="width" constant="140" id="9zu-Cv-PnI"/>
+                                </constraints>
+                            </imageView>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Q5-Bh-zp7">
+                                <rect key="frame" x="30" y="361" width="354" height="335"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIJ-MJ-rTv">
+                                        <rect key="frame" x="112.5" y="42" width="129.5" height="135"/>
+                                        <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="100"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.10368114749327401" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-4" height="8"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, 12 September" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CH4-iC-7D4">
+                                        <rect key="frame" x="92.5" y="16" width="169" height="26"/>
+                                        <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-2" height="3"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn9-62-JnE">
+                                        <rect key="frame" x="242" y="42" width="33" height="94"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-4" height="8"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="htF-h9-Mzu">
+                                        <rect key="frame" x="77" y="241" width="200" height="68"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1m2-tX-ctc">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind-icon" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-gF-8I7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="ihI-G0-D8e"/>
+                                                            <constraint firstAttribute="width" constant="24" id="y3b-Ed-ONP"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baz-1n-SrR">
+                                                        <rect key="frame" x="44" y="0.0" width="42.5" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <size key="shadowOffset" width="-2" height="3"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpn-JC-EGI">
+                                                        <rect key="frame" x="106.5" y="0.5" width="5" height="23"/>
+                                                        <fontDescription key="fontDescription" name="Overpass-Light" family="Overpass" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 km/h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOX-jK-ocf">
+                                                        <rect key="frame" x="131.5" y="0.0" width="68.5" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <size key="shadowOffset" width="-2" height="3"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="cCC-fV-693"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BAz-ud-Iwb">
+                                                <rect key="frame" x="0.0" y="44" width="200" height="24"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity-icon" translatesAutoresizingMaskIntoConstraints="NO" id="G4m-uB-oDN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="JbV-gh-xl9"/>
+                                                            <constraint firstAttribute="width" constant="24" id="lh9-vk-TyB"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Hum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6m-mS-d99">
+                                                        <rect key="frame" x="44" y="0.0" width="40.5" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <size key="shadowOffset" width="-2" height="3"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1R-VL-w55">
+                                                        <rect key="frame" x="104.5" y="0.5" width="5" height="23"/>
+                                                        <fontDescription key="fontDescription" name="Overpass-Light" family="Overpass" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="26 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tx-V7-EZy">
+                                                        <rect key="frame" x="129.5" y="0.0" width="70.5" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <size key="shadowOffset" width="-2" height="3"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="eZ3-QW-ueS"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUL-06-Uop">
+                                        <rect key="frame" x="137.5" y="181.5" width="79.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" name="Overpass-Bold" family="Overpass" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.098944859788907283" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-2" height="3"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CH4-iC-7D4" firstAttribute="top" secondItem="4Q5-Bh-zp7" secondAttribute="top" constant="16" id="EEP-Wq-obM"/>
+                                    <constraint firstAttribute="bottom" secondItem="htF-h9-Mzu" secondAttribute="bottom" constant="26" id="Nby-pm-PVK"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gn9-62-JnE" secondAttribute="trailing" constant="20" symbolic="YES" id="O2L-iP-Q6g"/>
+                                    <constraint firstItem="rIJ-MJ-rTv" firstAttribute="centerX" secondItem="4Q5-Bh-zp7" secondAttribute="centerX" id="O46-R1-1dj"/>
+                                    <constraint firstAttribute="height" constant="335" id="SfR-yW-wtQ"/>
+                                    <constraint firstItem="rIJ-MJ-rTv" firstAttribute="top" secondItem="CH4-iC-7D4" secondAttribute="bottom" id="ZTg-xE-mHw"/>
+                                    <constraint firstItem="htF-h9-Mzu" firstAttribute="centerX" secondItem="4Q5-Bh-zp7" secondAttribute="centerX" id="a1b-Wz-JQl"/>
+                                    <constraint firstItem="gn9-62-JnE" firstAttribute="leading" secondItem="rIJ-MJ-rTv" secondAttribute="trailing" id="bTS-DQ-XfB"/>
+                                    <constraint firstItem="gn9-62-JnE" firstAttribute="top" secondItem="CH4-iC-7D4" secondAttribute="bottom" id="pmu-QJ-naG"/>
+                                    <constraint firstItem="CH4-iC-7D4" firstAttribute="centerX" secondItem="4Q5-Bh-zp7" secondAttribute="centerX" id="reS-Xd-x5W"/>
+                                    <constraint firstItem="nUL-06-Uop" firstAttribute="centerX" secondItem="4Q5-Bh-zp7" secondAttribute="centerX" id="xev-qJ-8N6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3M-GI-4yS">
+                                <rect key="frame" x="97" y="762" width="220" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="E8q-Rn-Ma1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="-4" height="8"/>
+                                <state key="normal" title="Forecast report" image="up-icon">
+                                    <color key="titleColor" red="0.26666666666666666" green="0.30588235294117649" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ho5-Hy-XGq">
+                                <rect key="frame" x="30" y="60" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="P9y-NO-qMV"/>
+                                    <constraint firstAttribute="height" constant="24" id="bQn-BV-Qy0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="nUL-06-Uop" firstAttribute="bottom" secondItem="htF-h9-Mzu" secondAttribute="top" constant="-26" id="1Mk-v3-Ris"/>
+                            <constraint firstItem="4Q5-Bh-zp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="DHz-25-HW0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u3M-GI-4yS" secondAttribute="bottom" constant="36" id="E5D-yu-6sK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Moz-dB-AvF" secondAttribute="trailing" id="FoA-Uf-hzC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Q5-Bh-zp7" secondAttribute="trailing" constant="30" id="I1Y-S6-tmb"/>
+                            <constraint firstItem="8Pp-vN-Olc" firstAttribute="top" secondItem="Kgj-SL-kgE" secondAttribute="bottom" constant="60" id="IsH-Yt-qkQ"/>
+                            <constraint firstAttribute="bottom" secondItem="4Q5-Bh-zp7" secondAttribute="bottom" constant="200" id="JW6-Ut-dHL"/>
+                            <constraint firstItem="Kgj-SL-kgE" firstAttribute="leading" secondItem="Ho5-Hy-XGq" secondAttribute="trailing" constant="20" id="Jrx-iP-0dj"/>
+                            <constraint firstItem="Ho5-Hy-XGq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Jwx-1t-ebb"/>
+                            <constraint firstItem="Moz-dB-AvF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Klc-on-TWL"/>
+                            <constraint firstItem="Moz-dB-AvF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QJa-Sg-lnr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u3M-GI-4yS" secondAttribute="trailing" constant="97" id="Vuu-nq-0O7"/>
+                            <constraint firstAttribute="bottom" secondItem="Moz-dB-AvF" secondAttribute="bottom" id="Vzt-Ok-DiN"/>
+                            <constraint firstItem="Ho5-Hy-XGq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Wc0-VW-N0A"/>
+                            <constraint firstItem="u3M-GI-4yS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="ZNO-gW-9Ru"/>
+                            <constraint firstItem="8Pp-vN-Olc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="amr-sy-IUz"/>
+                            <constraint firstItem="4Q5-Bh-zp7" firstAttribute="top" secondItem="8Pp-vN-Olc" secondAttribute="bottom" constant="60" id="qT9-cL-Rfe"/>
+                            <constraint firstItem="Ho5-Hy-XGq" firstAttribute="centerY" secondItem="Kgj-SL-kgE" secondAttribute="centerY" id="yv6-Yd-wYl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="humidityPercLabel" destination="7tx-V7-EZy" id="qiA-Au-Xob"/>
+                        <outlet property="tempatureLabel" destination="rIJ-MJ-rTv" id="odq-63-4Bc"/>
+                        <outlet property="todayLabel" destination="CH4-iC-7D4" id="UVB-qz-4tD"/>
+                        <outlet property="weatherImage" destination="8Pp-vN-Olc" id="zxh-Xj-zCj"/>
+                        <outlet property="windSpeedLabel" destination="YOX-jK-ocf" id="ahl-yK-otm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-image" width="414" height="896"/>
+        <image name="dropdown" width="24" height="24"/>
+        <image name="humidity-icon" width="24" height="26"/>
+        <image name="location-icon" width="24" height="24"/>
+        <image name="partly-cloudy" width="128" height="128"/>
+        <image name="up-icon" width="24" height="24"/>
+        <image name="wind-icon" width="25" height="26"/>
+    </resources>
+</document>
