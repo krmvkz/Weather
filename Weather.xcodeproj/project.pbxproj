@@ -20,7 +20,6 @@
 		270162E1280194010069E0BE /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 270162DC280194010069E0BE /* OFL.txt */; };
 		270162E2280194010069E0BE /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 270162DD280194010069E0BE /* README.txt */; };
 		270162EA2801AD530069E0BE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270162E92801AD530069E0BE /* APIService.swift */; };
-		272CED232802BD7800D2CD08 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CED222802BD7800D2CD08 /* Current.swift */; };
 		2774624928029A65000D8C75 /* OneCallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774624828029A65000D8C75 /* OneCallModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		270162DC280194010069E0BE /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		270162DD280194010069E0BE /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		270162E92801AD530069E0BE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		272CED222802BD7800D2CD08 /* Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 		272CED242802E1DC00D2CD08 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		2774624828029A65000D8C75 /* OneCallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCallModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				2774624828029A65000D8C75 /* OneCallModel.swift */,
-				272CED222802BD7800D2CD08 /* Current.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -234,7 +231,6 @@
 				270162C4280164850069E0BE /* HomeViewController.swift in Sources */,
 				270162C0280164840069E0BE /* AppDelegate.swift in Sources */,
 				270162C2280164840069E0BE /* SceneDelegate.swift in Sources */,
-				272CED232802BD7800D2CD08 /* Current.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
