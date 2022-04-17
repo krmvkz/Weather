@@ -15,9 +15,28 @@ final class HomeViewController: UIViewController {
     @IBOutlet private weak var windSpeedLabel: UILabel!
     @IBOutlet private weak var humidityPercLabel: UILabel!
     
+    let lat: Double = 43.22
+    let lon: Double = 76.85
+    let exclude: Exclude = .minutely
+    let units: Units = .metric
+    let lang: Language = .en
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let params: [String: Any] = [
+            "lat": lat,
+            "lon": lon,
+            "exclude": exclude,
+            "units": units,
+            "lang": lang,
+            "appid": Bundle.main.object(forInfoDictionaryKey: "API_KEY") as! String
+        ]
+        
+        let APIService = APIService()
+        APIService.fetchWeatherData(params: params) { result in
+            dump(result)
+        }
     }
     
     

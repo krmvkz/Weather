@@ -6,11 +6,27 @@
 //
 
 import Foundation
+import Alamofire
 
 struct APIService {
     
-    let session = URLSession.shared
-    let url = "https://api.openweathermap.org/data/2.5/onecall?lat=43.22&lon=76.85&exclude=minutely,hourly&appid=b9a159871872da143ecd3bfc8fc9ee08"
-//  let task = session.
+    private let baseURL = "https://api.openweathermap.org/data/2.5/onecall?"
     
+    func fetchWeatherData(params: Parameters, completion: @escaping (Result<OneCall,NetworkError>)
+            -> Void) {
+            AF.request(baseURL, parameters: params).responseJSON { response in
+                guard let itemsData = response.data else {
+                    completion(.failure(.badResponse))
+                  return
+                }
+                do {
+                    let decoder = JSONDecoder()
+                    let items = try decoder.decode(OneCall.self, from: itemsData)
+                        completion(.success(items))
+                } catch {
+                    completion(.failure(.noData))
+                }
+            }
+        }
+          
 }
